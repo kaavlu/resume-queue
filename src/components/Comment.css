@@ -1,0 +1,52 @@
+.comment-section {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 70px;
+    margin: 10px;
+    min-height: 100vh;
+  }
+  
+  .left-panel {
+    width: 50%;
+    padding-right: 10px;
+  }
+  
+  .right-panel {
+    width: 50%;
+    padding-left: 10px;
+  }
+  
+  .resume-pdf {
+    width: 100%;
+    height: 80vh;
+    border: none;
+  }
+  
+  .comments-display {
+    margin-bottom: 10px; /* Space above comment box */
+  }
+  
+  .comment-box {
+    width: 100%; /* Makes comment box wider */
+    height: 200px; /* Set a fixed height */
+  }
+  .reviewer-box {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .submit-btn {
+    display: block; /* Ensure it's a block element to sit on its line */
+    width: 100%; /* Full width of the right panel */
+    margin-top: 10px; /* Space above the button */
+  }
+  
+  @media (max-width: 768px) {
+    .comment-section {
+      flex-direction: column;
+    }
+  
+    .left-panel, .right-panel {
+      width: 100%;
+    }
+  }
+  

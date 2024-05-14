@@ -99,6 +99,7 @@ const Comment: React.FC = () => {
     // Submit the form
     const form = event.target as HTMLFormElement;
     form.submit();
+    form.reset();
   };
 
   return (
@@ -109,7 +110,7 @@ const Comment: React.FC = () => {
       </div>
       <div className="right-panel">
         <div className="comments-display">
-          <h4>{username ? `${username}'s Comments` : "User Comments"}</h4>
+          <h3>{username ? `${username}'s Comments` : "User Comments"}</h3>
           <p>{resume ? resume.comments_upload : "No comments yet."}</p>
         </div>
         {/* FormSubmit form */}
@@ -119,15 +120,15 @@ const Comment: React.FC = () => {
               <div className="form-group">
                 <div className="form-row">
                   <div className="col">
-                    <input type="text" name="name" className="form-control" placeholder="Full Name" required />
+                    <input type="text" name="name" style={{ marginTop: '110px', marginBottom: '10px', width: '82vh'}} placeholder="Full Name" required />
                   </div>
                   <div className="col">
-                    <input type="email" name="email" className="form-control" placeholder="Email Address" required />
+                    <input type="email" name="email" style={{ marginTop: '10px', marginBottom: '10px', width: '82vh'}} placeholder="Email Address" required />
                   </div>
                 </div>
               </div>
               <div className="form-group">
-                <textarea placeholder="Your Message" className="form-control" name="message" rows="10" required></textarea>
+                <textarea placeholder="Your Message" style={{ marginTop: '10px', marginBottom: '10px', width: '82vh', height: '40vh' }} name="message" required></textarea>
               </div>
               <button type="submit" className="btn btn-lg btn-dark btn-block">Submit Form</button>
             </form>

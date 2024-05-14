@@ -23,7 +23,7 @@
   }
   
   .comments-display {
-    margin-bottom: 10px; /* Space above comment box */
+    margin-bottom: 100px; /* Space above comment box */
   }
   
   .comment-box {
@@ -39,7 +39,15 @@
     width: 100%; /* Full width of the right panel */
     margin-top: 10px; /* Space above the button */
   }
-  
+
+  .form-control {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .edit {
+    margin-top: 5px;
+    margin-left: 12px;
+  }
   @media (max-width: 768px) {
     .comment-section {
       flex-direction: column;
